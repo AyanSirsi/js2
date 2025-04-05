@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Change Paragraph Text Example</h1>
+    <p id="myParagraph">this is my shop.</p>
+    <button id="myButton">Click me to change text</button>
+
+    <script>
+        document.getElementById("myButton").onclick = function() {
+            document.getElementById("myParagraph").innerText = "you will get all the juice!";
+        };
+    </script>
+
+</body>
+</html>
